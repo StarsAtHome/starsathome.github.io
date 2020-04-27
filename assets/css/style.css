@@ -1,0 +1,241 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+/* Navbar */
+.navbar {
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin-left: 0px;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: pink;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 20px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* The following stops mobile scrolling to the left - x axis */
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
+/* Body*/
+body.index {
+ background-image: url("../images/new-record.png");
+ background-repeat: no-repeat;
+ }
+
+.active {
+    color: #fa98ff;
+}
+
+/*I saw that the footer looked bad on widescreen so I changed the width and margin so it would be more responsive on widescreen*/
+@media (min-width: 1400px) {
+    .footer-index{
+        margin-top: 250px;
+    }
+    
+    body.index {
+     background-image: url("../images/large-record.png") !important; 
+     backgroud-attachment: fixed !important;
+     background-position: 30px 40px !important;
+    }
+    
+    .content {
+    max-width: 1400px;
+    margin: auto;
+    }
+}
+
+/*Following code for responsive hamburger button acquired from youtube video Responsive Navbar Tutorial https://www.youtube.com/watch?v=At4B7A4GOPg */
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    .video {
+        margin-top: 140px !important; /* !important used to override other .video css rule */
+    }
+}
+/* footer*/
+footer {
+    background-color: black;
+    color: black;
+    min-height: 50px;
+    margin: 0px;
+    padding: 0px;
+    
+    }
+
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+body {
+ padding: 0px;
+ margin: 0px;
+}
+
+h1 {
+font-family: 'Orbitron', sans-serif;
+font-size: x-large;
+margin-left: 40px;
+
+}
+
+
+
+
+.image-cover {
+
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.video {
+   margin-top: 50px;
+   margin-left: 60px; 
+}
+
+
+.footertext {
+    color: white;
+    margin-left: 930px;
+    margin-bottom: 0;
+}
+.footertext2 {
+    color: white;
+    margin-left: 1045px;
+    margin-bottom: 0;
+}
+ /* card*/   
+.card {
+    margin-left: 15px;
+    background-color: #ffbefe;
+
+}
+
+
+#card-right{
+    margin-right: 20px;
+}
+
+.video-col {
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.map {
+    margin-left: 15px;
+    margin-top: 40px;
+}
+
+.card-margin {
+    margin-bottom: 30px;
+}
+
+
+.card-title1   {
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+
+.H3 {
+
+font-family: 'Orbitron', sans-serif;
+}
+
+.entry-content {
+    margin-right: 40px;
+}
+
